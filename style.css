@@ -29,3 +29,18 @@ body{
     transform: translateY(-5px);
     border-color: var(--orange-accent);
 }
+.btn-custom{
+    background-color: var(--orange-accent);
+    color: var(--white);
+    border: none;
+    transition: background-color 0.3s ease;
+}
+.btn-custom:hover{
+    background-color: var(--creame-beige);
+    color: var(--navy-dark);
+}
+.btn-filter.active{
+    background-color: var(--orange-accent);
+    color: var(--navy-dark);
+    border-color: var(--orange-accent);
+}
