@@ -43,5 +43,16 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     // Jalankan animasi saat halaman dimuat
-    animateCounters();
+    // animateCounters();
+    const statsSection = document.getElementById('stats');
+    const observer = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) {
+                animateCounters();
+                observer.disconnect();
+            }
+        });
+
+    if(statsSection) {
+        observer.observe(statsSection);
+    }
 });
