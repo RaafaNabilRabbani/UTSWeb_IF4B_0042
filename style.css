@@ -10,3 +10,9 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.text-accent{
+    color: var(--orange-accent);
+}
+.bg-accent{
+    background-color: var(--orange-accent);
+}
