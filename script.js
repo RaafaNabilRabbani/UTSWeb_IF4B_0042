@@ -19,4 +19,29 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
     });
+
+    //animasi counter angka statistik
+    const counters = document.querySelectorAll('.counter');
+    const speed = 200;
+
+    const animateCounters = () => {
+        counters.forEach(counter => {
+            const updateCount = () => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText.replace(/,/g, '');
+                const increment = Math.ceil(target / speed);
+
+                if (count < target) {
+                    counter.innerText = (count + increment).toLocaleString();
+                    setTimeout(updateCount, 15);
+                } else {
+                    counter.innerText = target.toLocaleString('id-ID');
+                }
+            };
+            updateCount();
+        });
+    };
+
+    // Jalankan animasi saat halaman dimuat
+    animateCounters();
 });
