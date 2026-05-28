@@ -4,3 +4,9 @@
     --creame-beige: #E5C29F;
     --white: #FFFFFF;
 }
+body{
+    background-color: var(--navy-dark);
+    color: var(--white);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
