@@ -78,3 +78,16 @@ body.light-mode .footer{
     background-color: #E5E7EB !important;
     color: #111827 ;
 }
+/* ganti mode untuk banner pada hero section */
+/* dark mode */
+#hero{
+    min-height: 80vh;
+    background:linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.9)), url('image/BannerRPNoElement.png') center/cover;
+}
+#hero .description-text{
+    color: var(--creame-beige);
+}
+/* light mode */
+body.light-mode #hero{
+    background:linear-gradient(rgba(249, 250, 251, 0.8), rgba(249, 250, 251, 0.9)), url('image/BannerRPLightMode.png') center/cover !important;
+}
