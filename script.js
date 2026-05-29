@@ -55,4 +55,18 @@ document.addEventListener('DOMContentLoaded', function () {
     if(statsSection) {
         observer.observe(statsSection);
     }
+
+    // Toggle Theme
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('light-mode');
+
+        if (document.body.classList.contains('light-mode')) {
+            themeToggle.textContent = 'Dark Mode';
+            themeToggle.classList.replace('btn-outline-light', 'btn-outline-dark');
+        } else {
+            themeToggle.textContent = 'Light Mode';
+            themeToggle.classList.replace('btn-outline-dark', 'btn-outline-light');
+        }
+    });
 });
