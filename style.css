@@ -91,3 +91,7 @@ body.light-mode .footer{
 body.light-mode #hero{
     background:linear-gradient(rgba(249, 250, 251, 0.8), rgba(249, 250, 251, 0.9)), url('image/BannerRPLightMode.png') center/cover !important;
 }
+/* Perbaikan Background yang tidak beruabah saat light mode */
+#gallery{
+    background-color: #1f2937;
+}
